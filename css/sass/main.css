@@ -1,0 +1,54 @@
+/* HEX */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#main-nav a {
+  color: #131313;
+}
+
+#main-nav li.active {
+  background-color: #ff9900;
+}
+
+#main-nav li.active a {
+  color: #fafafa;
+}
+
+#main-nav li:hover:not(.active) {
+  background: #396afc;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#2948ff), to(#396afc));
+  background: linear-gradient(to top, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#banner {
+  background-color: #3bceacff;
+  padding: 4cm 0;
+}
+
+#about img {
+  padding-bottom: 8em;
+}
+/*# sourceMappingURL=main.css.map */

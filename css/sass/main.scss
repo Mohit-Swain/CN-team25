@@ -1,0 +1,79 @@
+/* HEX */
+$navbar-white: #fafafa;
+$navbar-black: #131313;
+$navbar-active-color: #fafafa;
+$navbar-bg-active-color: #ff9900;
+$bg-light-blue: #00c6ff;
+$bg-dark-blue: #0072ff;
+
+$color1: #ef476fff;
+$color2: #ffd166ff;
+$color3: #06d6a0ff;
+$color4: #118ab2ff;
+$color5: #073b4cff;
+
+$color6: #540d6eff;
+$color7: #ee4266ff;
+$color8: #ffd23fff;
+$color9: #3bceacff;
+$color10: #0ead69ff;
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+#main-nav {
+    align-items: stretch;
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    a {
+        color: $navbar-black;
+    }
+
+    li {
+
+        &.active {
+            background-color: $navbar-bg-active-color;
+
+            a {
+                color: $navbar-active-color;
+            }
+        }
+
+        &:hover:not(.active) {
+            // background-color: $color8;
+            background: #396afc;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #2948ff, #396afc);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #2948ff, #396afc);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    }
+}
+
+#banner {
+    background-color: $color9;
+    padding: 4cm 0;
+}
+
+#about {
+    img {
+        padding-bottom: 8em;
+    }
+}
