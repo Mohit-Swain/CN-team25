@@ -8,18 +8,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 #main-nav {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #0ead69ff;
 }
 
 #main-nav a {
@@ -45,10 +38,45 @@ body {
 
 #banner {
   background-color: #3bceacff;
-  padding: 4cm 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
 }
 
 #about img {
   padding-bottom: 8em;
+}
+
+#cards {
+  background-color: #ee4266ff;
+}
+
+#cards .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: 1;
+          flex-flow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#blogs {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#love {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #118ab2ff;
+}
+
+#love img {
+  vertical-align: top;
 }
 /*# sourceMappingURL=main.css.map */

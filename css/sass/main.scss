@@ -26,26 +26,24 @@ html,
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
-
 #main-nav {
-    align-items: stretch;
-    background: #2193b0;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #2193b0;
+    // /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    // /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #6dd5ed, #2193b0);
+    // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+    background-color: $color10;
 
     a {
         color: $navbar-black;
     }
 
     li {
-
         &.active {
             background-color: $navbar-bg-active-color;
 
@@ -62,18 +60,50 @@ body {
             /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to top, #2948ff, #396afc);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
         }
     }
 }
 
 #banner {
     background-color: $color9;
-    padding: 4cm 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
 }
 
 #about {
     img {
         padding-bottom: 8em;
     }
+}
+
+#cards {
+    background-color: $color7;
+
+    .row {
+        flex-flow: 1;
+        justify-content: space-evenly;
+    }
+}
+
+#blogs {
+    // background-color: ;
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#love {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $color4;
+
+    img {
+        vertical-align: top;
+    }
+
 }
